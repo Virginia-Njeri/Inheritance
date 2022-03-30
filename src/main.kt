@@ -32,6 +32,13 @@ class Bus( make:String, model: String, color:String, capacity:Int):Cars (make,mo
            var maxfare=fare*capacity
 return maxfare
 }
+       override fun calculateParkingFee(hours: Int):Int {
+      //  super.calculateParkingFee(hours)
+        var fee=hours*capacity
+        println(fee)
+        return fee
+    }  
+       
 }
 
 
